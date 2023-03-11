@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root {
+    --main-color: #2C3333;
+    --sec-color: #F6F6F6;
+    --third-color: #0E8388;
+    --hover-color: #2E4F4F;
+    
+
+}
+
+
+* {   
+    margin: 0;  
+    padding: 0;
+}
+
+.menu {
+    padding: 2% 0% 0% 10%;
+}
+
+.submenu {
+    display: flex;
+    gap: 80px;
+}
+
+.pages {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+
+.container {
+    padding: 8% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body { 
+        box-sizing: border-box;
+        background-color: var(--main-color);
+        color: var(--sec-color);
+}
+
+.blue-title {
+    color: var(--third-color);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.buttons {
+    background-color: var(--main-color);
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 70%;
+    text-align: center;
+    border: 2px solid var(--third-color);
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--sec-color);
+    text-decoration: none;
+}
+
+.stitle {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.buttons:hover {
+    background-color: var(--hover-color);
+}
+
+.zoom {
+    width: 40%;
+    padding-bottom: 5%;
+}
+.zoom:hover {
+    width: 41%;
+    height: 41%;
+}
+
+.rodape {
+    background-color: var(--third-color);
+    color: var(--main-color);
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    
+    .menu {
+        padding: 6%;
+    }
+    
+    .submenu {
+        justify-content: center;
+    }
+    
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .item {
+        width: auto;
+
+    }
+
+    .buttons {
+        width: 80%;
+    }
+
+
+}
